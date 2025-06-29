@@ -8,7 +8,7 @@ def get_categories(filter=None):
     if not filter:
         return Category.objects.all()
     else:
-        return Category.objects.all(pk=filter)
+        return Category.objects.filter(pk=filter)
 
 
 @register.inclusion_tag('test_app/list_categories.html')
