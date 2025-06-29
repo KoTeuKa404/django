@@ -1,0 +1,3070 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-04-27T08:25:47.386Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Cat\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-04-27T08:26:37.680Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-04-27T08:27:19.522Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "flask",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Content\", \"Cat\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-04-27T08:35:59.884Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-04-27T08:36:16.405Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Flask",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-04-27T08:37:33.743Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Pygame",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-04-27T08:38:22.412Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Panda3D",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-04-28T08:05:01.005Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "mathlib",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-04-28T09:46:08.445Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Laptop object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-04-28T09:48:27.304Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Laptop object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-04-28T12:38:14.202Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-04-28T12:49:44.392Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-04-28T12:52:59.071Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-04-28T14:56:44.266Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Мат бібліотеки",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2024-04-28T14:56:48.362Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Веб бібліотеки",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2024-04-28T14:56:51.376Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Ігрові бібліотеки",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2024-04-28T14:56:53.995Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Візуальні бібліотеки",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2024-04-28T14:59:25.403Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Мат бібліотеки",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2024-04-28T14:59:27.413Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Візуальні бібліотеки",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2024-04-28T14:59:29.549Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Веб бібліотеки",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2024-04-28T14:59:31.647Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Ігрові бібліотеки",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2024-04-28T15:02:38.503Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2024-04-28T15:02:41.367Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Flask",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2024-04-28T15:02:46.055Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Pygame",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2024-04-28T15:02:49.287Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Panda3D",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2024-04-28T15:06:49.649Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "NumPy",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Slug\", \"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2024-04-28T15:08:51.294Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Panda3D",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2024-04-30T09:04:46.085Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Математичні бібліотеки",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2024-04-30T09:35:11.627Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "стандартні бібліотеки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2024-04-30T09:38:19.701Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Стандартні бібліотеки",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2024-04-30T10:52:28.431Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "допоможні біблотеки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2024-05-10T14:48:07.661Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "Обробка даних",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2024-05-12T08:45:01.112Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "user1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2024-05-13T09:34:59.506Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2024-05-13T09:35:49.267Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "Допоможні біблотеки",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2024-05-21T08:34:51.746Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "sys",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2024-06-02T09:26:25.646Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "10",
+    "object_repr": "Pandas",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2024-06-02T14:45:31.255Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "9",
+    "object_repr": "test15",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2024-06-02T14:45:49.555Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "7",
+    "object_repr": "test1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2024-07-21T17:25:41.177Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "легкі-бібліотеки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2024-07-21T17:25:54.160Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "2",
+    "object_repr": "тяжкі-бібліотеки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2024-07-21T17:25:59.024Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "3",
+    "object_repr": "ігрові-бібліотеки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2024-07-21T17:26:02.424Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "4",
+    "object_repr": "3д-бібліотеки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2024-07-21T17:26:34.359Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "5",
+    "object_repr": "2д-бібліотеки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2024-07-21T17:28:02.296Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "6",
+    "object_repr": "API",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2024-07-21T17:28:35.768Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "7",
+    "object_repr": "документації",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2024-07-21T17:28:54.212Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "8",
+    "object_repr": "фреймворки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2024-07-21T18:03:34.093Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Author\", \"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2024-07-21T18:04:08.502Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Flask",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2024-07-21T18:04:22.062Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Flask",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2024-07-21T18:04:29.217Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Flask",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2024-07-21T18:04:45.452Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2024-07-21T18:04:53.600Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Pygame",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2024-07-21T18:04:57.482Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Pygame",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2024-07-21T18:05:01.270Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Panda3D",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2024-07-21T18:05:05.870Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "NumPy",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2024-07-21T18:05:11.053Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Kivy",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2024-07-21T18:05:14.439Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "PyQt5",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2024-07-21T18:05:19.151Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "os",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2024-07-21T18:05:22.726Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "sys",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2024-07-21T18:05:26.765Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "11",
+    "object_repr": "re",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2024-07-21T18:05:30.510Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "sys",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2024-07-21T18:05:34.524Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "PyQt5",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2024-07-21T18:05:36.806Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "sys",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2024-07-21T18:05:39.139Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "os",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2024-07-21T18:05:41.613Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "PyQt5",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2024-07-21T18:05:43.992Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Kivy",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2024-07-21T18:05:46.139Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "NumPy",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2024-07-21T18:05:48.341Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Panda3D",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2024-07-21T18:05:51.260Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Pygame",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2024-07-21T18:05:53.292Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Flask",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2024-07-21T18:05:55.868Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2024-08-18T07:52:17.574Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "10",
+    "object_repr": "re",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Slug\", \"Content\", \"Cat\", \"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2024-08-18T07:52:53.019Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Likes\", \"Dislikes\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2024-08-18T09:09:26.994Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Flask",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Cat\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2024-08-19T17:02:22.679Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2024-08-19T17:03:28.182Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2024-08-19T17:04:23.122Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2024-08-19T17:04:37.794Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2024-11-05T22:35:08.513Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2024-11-26T10:37:08.473Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "18",
+    "object_repr": "tesr",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2024-12-14T16:07:47.340Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Flask",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2024-12-14T16:52:55.302Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Flask",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2024-12-14T16:55:10.505Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Flask",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2024-12-14T17:11:31.951Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "Достатньо непоганий фреймворк",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Text\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2024-12-14T17:13:49.263Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2024-12-24T19:17:44.486Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "11",
+    "object_repr": "title",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2024-12-24T19:17:54.272Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "18",
+    "object_repr": "tesr",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2024-12-24T19:29:33.980Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "12",
+    "object_repr": "411",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2024-12-24T19:29:47.185Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "11",
+    "object_repr": "title",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2024-12-24T19:52:14.121Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Flask",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2024-12-24T19:57:49.060Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2025-01-03T18:22:09.810Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2025-03-01T15:30:36.298Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\", \"Video embed url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2025-03-01T15:37:57.800Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "19",
+    "object_repr": "aggg",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2025-03-01T15:40:06.959Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Video url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2025-03-01T15:40:15.381Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "20",
+    "object_repr": "agg",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2025-05-30T16:20:07.536Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2025-05-30T16:20:16.343Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Flask",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add addon",
+    "content_type": 7,
+    "codename": "add_addon"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change addon",
+    "content_type": 7,
+    "codename": "change_addon"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete addon",
+    "content_type": 7,
+    "codename": "delete_addon"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view addon",
+    "content_type": 7,
+    "codename": "view_addon"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add test",
+    "content_type": 8,
+    "codename": "add_test"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change test",
+    "content_type": 8,
+    "codename": "change_test"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete test",
+    "content_type": 8,
+    "codename": "delete_test"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view test",
+    "content_type": 8,
+    "codename": "view_test"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 9,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 9,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 9,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 9,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add відомі бібліотеки",
+    "content_type": 10,
+    "codename": "add_library"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change відомі бібліотеки",
+    "content_type": 10,
+    "codename": "change_library"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete відомі бібліотеки",
+    "content_type": 10,
+    "codename": "delete_library"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view відомі бібліотеки",
+    "content_type": 10,
+    "codename": "view_library"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Магазин",
+    "content_type": 11,
+    "codename": "add_shopb"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Магазин",
+    "content_type": 11,
+    "codename": "change_shopb"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Магазин",
+    "content_type": 11,
+    "codename": "delete_shopb"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Магазин",
+    "content_type": 11,
+    "codename": "view_shopb"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add base",
+    "content_type": 12,
+    "codename": "add_base"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change base",
+    "content_type": 12,
+    "codename": "change_base"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete base",
+    "content_type": 12,
+    "codename": "delete_base"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view base",
+    "content_type": 12,
+    "codename": "view_base"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add laptop",
+    "content_type": 13,
+    "codename": "add_laptop"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change laptop",
+    "content_type": 13,
+    "codename": "change_laptop"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete laptop",
+    "content_type": 13,
+    "codename": "delete_laptop"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view laptop",
+    "content_type": 13,
+    "codename": "view_laptop"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add warranty",
+    "content_type": 14,
+    "codename": "add_warranty"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change warranty",
+    "content_type": 14,
+    "codename": "change_warranty"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete warranty",
+    "content_type": 14,
+    "codename": "delete_warranty"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view warranty",
+    "content_type": 14,
+    "codename": "view_warranty"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add captcha store",
+    "content_type": 15,
+    "codename": "add_captchastore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change captcha store",
+    "content_type": 15,
+    "codename": "change_captchastore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete captcha store",
+    "content_type": 15,
+    "codename": "delete_captchastore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view captcha store",
+    "content_type": 15,
+    "codename": "view_captchastore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add tag post",
+    "content_type": 16,
+    "codename": "add_tagpost"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change tag post",
+    "content_type": 16,
+    "codename": "change_tagpost"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete tag post",
+    "content_type": 16,
+    "codename": "delete_tagpost"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view tag post",
+    "content_type": 16,
+    "codename": "view_tagpost"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 17,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 17,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 17,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 17,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add like",
+    "content_type": 18,
+    "codename": "add_like"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change like",
+    "content_type": 18,
+    "codename": "change_like"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete like",
+    "content_type": 18,
+    "codename": "delete_like"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view like",
+    "content_type": 18,
+    "codename": "view_like"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add dislike",
+    "content_type": 19,
+    "codename": "add_dislike"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change dislike",
+    "content_type": 19,
+    "codename": "change_dislike"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete dislike",
+    "content_type": 19,
+    "codename": "delete_dislike"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view dislike",
+    "content_type": 19,
+    "codename": "view_dislike"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add reaction",
+    "content_type": 20,
+    "codename": "add_reaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change reaction",
+    "content_type": 20,
+    "codename": "change_reaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete reaction",
+    "content_type": 20,
+    "codename": "delete_reaction"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view reaction",
+    "content_type": 20,
+    "codename": "view_reaction"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$nae4FXXOmyKpmIKTQSbsbH$2cVizWDVyyInNH2vOvPSdipi/Tk9o/nLldT3WbJ/mkY=",
+    "last_login": "2025-05-30T16:19:54.262Z",
+    "is_superuser": true,
+    "username": "adminroot",
+    "first_name": "",
+    "last_name": "",
+    "email": "rootadmin@coolsite.uu",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-04-22T08:27:40.141Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$G08r63AP1Bg9zPAMM5TRHc$vIUnXUcp2ntft51mAMqdRhZBkzUKeLi3epnazLzLEWk=",
+    "last_login": "2024-11-05T21:46:30.160Z",
+    "is_superuser": false,
+    "username": "user1",
+    "first_name": "",
+    "last_name": "",
+    "email": "user@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-05-12T08:45:15.592Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$osM3K3T13Uvd2Vw7cYz4BR$ibfo2LCJPuMoRs7AiAwUg3oVLqWCM98zNZCwdcwZJ3c=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Міша",
+    "first_name": "",
+    "last_name": "",
+    "email": "misha@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-02T09:20:03.665Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$rioRxKmHe0BWFLAUk48LpA$wqBoLy4fGN6ido4ChVa/weZa077VmDqwP5oYUu35vPs=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user2",
+    "first_name": "",
+    "last_name": "",
+    "email": "user@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-02T09:21:18.347Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$kG3ZLSWwGYBRCtMXE7CkSz$vuYRp1jq3HqPMKIDeWfnhktj1FzBLD2Es2R0VF6aN14=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "test",
+    "first_name": "",
+    "last_name": "",
+    "email": "test@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-02T14:24:09.569Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$NwBiNK4Cnj2fpMo3Kq91A1$H07TDEAYmSxxNM+AxGZLq2+vbSfc5V/XcACbixnpbHA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "test11",
+    "first_name": "",
+    "last_name": "",
+    "email": "test@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-02T14:33:29.928Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$herb8LM9gt1Yv7yI7nmWev$nTHWPVqYC6XCbbx2+fEuNMpyr32DBA1EXrfx3QzMVig=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user14",
+    "first_name": "",
+    "last_name": "",
+    "email": "use@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-02T14:47:37.654Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$7dwo21iAVxqtgFVaCXmQTU$ewVXIC+HI8IFYPdZMdImyD0sXHdyGjZqGWKxu7nVu7E=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user1441",
+    "first_name": "",
+    "last_name": "",
+    "email": "use@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-02T14:49:00.385Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 12,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$mNTbIuUlvjc4lpyhYoYyuh$3W74fG1q+gpdxD5oZFe0Xrk/JlUOsE8LbA2l1H2wR6c=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user17",
+    "first_name": "",
+    "last_name": "",
+    "email": "use14r@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-09T17:45:36.239Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 13,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$QWOiNe7Kz0UxPkGlOitvbB$y637SY7R+KyKMVbURoue0LuepKAZ0xDdnHsJhznbtts=",
+    "last_login": "2024-06-09T18:15:15.831Z",
+    "is_superuser": false,
+    "username": "user171",
+    "first_name": "",
+    "last_name": "",
+    "email": "use14r@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-09T18:15:14.658Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 14,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$VosNnTdtiy2yowcSjBOD0k$oEFgpcMuOfhTLfFYBMPL7VKexk/UhJ+DqwnlSMcR8X4=",
+    "last_login": "2024-06-09T18:15:36.836Z",
+    "is_superuser": false,
+    "username": "dasdad",
+    "first_name": "",
+    "last_name": "",
+    "email": "user63@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-06-09T18:15:35.704Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "test_app",
+    "model": "addon"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "test_app",
+    "model": "test"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "test_app",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "test_app",
+    "model": "library"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "test_app",
+    "model": "shopb"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "test_app",
+    "model": "base"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "test_app",
+    "model": "laptop"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "test_app",
+    "model": "warranty"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "captcha",
+    "model": "captchastore"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "test_app",
+    "model": "tagpost"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "test_app",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "test_app",
+    "model": "like"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "test_app",
+    "model": "dislike"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "test_app",
+    "model": "reaction"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0jb0j8ka93xrgbfiq4m9f7x1woohm45h",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAURP-FtSFwEbh16b7fQHhcpGogKe3K-O9K0oUuZ86ZeTHn9624vdPqlsQuTLLTbxd8fFAdIN19vTUeW93WJfCh8IN2PrdEz-vh_h0U38t3nZVMmAgleg1Wg4g62BGEBWUsqSzPQBFCntBYG3TMGhMIUtpMGA17fwDKnjco:1sVYg3:92hCzkweW119Al6IQtSQYiWydTbgvGlBK6k4IKf3kcA",
+    "expire_date": "2024-08-04T15:40:47.546Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0r91e4u3nm1by9kmp4lx0xkx619zfwmc",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAURP-FtSFwEbh16b7fQHhcpGogKe3K-O9K0oUuZ86ZeTHn9624vdPqlsQuTLLTbxd8fFAdIN19vTUeW93WJfCh8IN2PrdEz-vh_h0U38t3nZVMmAgleg1Wg4g62BGEBWUsqSzPQBFCntBYG3TMGhMIUtpMGA17fwDKnjco:1t8S8M:YqTFGAkVR_lutKD5v7xNkDiNDn6M2XNiQdSO3TUsDkA",
+    "expire_date": "2024-11-19T22:34:46.452Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5aiaay1mrfbziln9bwd82lx9n8p4qjbq",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAURP-FtSFwEbh16b7fQHhcpGogKe3K-O9K0oUuZ86ZeTHn9624vdPqlsQuTLLTbxd8fFAdIN19vTUeW93WJfCh8IN2PrdEz-vh_h0U38t3nZVMmAgleg1Wg4g62BGEBWUsqSzPQBFCntBYG3TMGhMIUtpMGA17fwDKnjco:1s1RBM:-oAaBxYATqDasShIh0wfoEWL3GuRt_8cW8mMmupy_JI",
+    "expire_date": "2024-05-13T13:36:36.531Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9764p3w62f81vp1083t5mkvwo4fa77oj",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQAP-FsyE8S-vRe7-B7C6LVE1JSnsy_rsh6UGvM5N5iwjHXuLReItLElehnbj8QgR68tpNesB6r5Lqum8Lyp7I0zY518Sv29n-DQq00r8QVBiRJ5PQI9MUgNzkBgOANlvlc7A2a6MhGzbsCQ1R8KO2YSAPSny-GMc4VA:1sGN4q:PM_7gaWnZpmEmQ1qIAqc2ZLXjc5Ds8Uo216fuKgITIo",
+    "expire_date": "2024-06-23T18:15:36.901Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "cgypo4hwyt4cxwqrssx0e9so36fsx6qu",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAURP-FtSFwEbh16b7fQHhcpGogKe3K-O9K0oUuZ86ZeTHn9624vdPqlsQuTLLTbxd8fFAdIN19vTUeW93WJfCh8IN2PrdEz-vh_h0U38t3nZVMmAgleg1Wg4g62BGEBWUsqSzPQBFCntBYG3TMGhMIUtpMGA17fwDKnjco:1tQAFw:YjA6CV1CicAMG6oADR1fC5g71bPpVDxSSuIBWL9_QP8",
+    "expire_date": "2025-01-07T19:07:48.230Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jd1p4w2zj8p6jumlfc51coijjeyg9v10",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCGmRbq0r1nIAMDUjVtUtqV8e7apAvd_vfef6nA21rD1vISRlFnBer0u0VOjzztQO483Wad5mldxqh3RR-06ess-Xk53L-Dyq1-65gKA1iDzokzg_E4QJFEQoQEIg4h54Esoge2nUEA8B1Z35dEpWf1_gC__Dag:1uL2SY:iB7PgQmAjXgu3cr7Lx-2QG0qByG2JMCiA_EkrsOHwvM",
+    "expire_date": "2025-06-13T16:19:54.277Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lo16o9ba3xiuc67x1cv0uejvbmg4azdt",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAURP-FtSFwEbh16b7fQHhcpGogKe3K-O9K0oUuZ86ZeTHn9624vdPqlsQuTLLTbxd8fFAdIN19vTUeW93WJfCh8IN2PrdEz-vh_h0U38t3nZVMmAgleg1Wg4g62BGEBWUsqSzPQBFCntBYG3TMGhMIUtpMGA17fwDKnjco:1tMUg0:hNjIhliBd5Qvis_xx7d6ausuC5Z_lce0V1RzlTXvTwE",
+    "expire_date": "2024-12-28T16:07:32.676Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "m9py37gon7ypr77f54b39dcqpvlj53u2",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSE8Ck5duu83kIEZpGogKe3K-O_apAvd3nPOfYmA21rC1nkJM4mLsOL0u0VMD647oDvWW5Op1XWZo9wVedAup0b8vB7u30HBXr71yBQNZnADUVTOksqeNWY_mrNBZxQ7tH6wnDIZSAnAIFrlkwMNWYN4fwAARTgw:1sKywY:Lxn36CHzEyTUxkteD1z4lkXo5rgdekgTWfPRtySNa1A",
+    "expire_date": "2024-07-06T11:30:06.627Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "p79t70qzq0qyqp0062qra3batepr2ouy",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAURP-FtSFwEbh16b7fQHhcpGogKe3K-O9K0oUuZ86ZeTHn9624vdPqlsQuTLLTbxd8fFAdIN19vTUeW93WJfCh8IN2PrdEz-vh_h0U38t3nZVMmAgleg1Wg4g62BGEBWUsqSzPQBFCntBYG3TMGhMIUtpMGA17fwDKnjco:1tFsXG:eUazmJaOrKkY4rTGDatE1BPOjcRVt6nefWMSbLhSOYk",
+    "expire_date": "2024-12-10T10:11:10.671Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "srl4wrsvkaao8ltobhjwc7rmdsxqzbv0",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAURP-FtSFwEbh16b7fQHhcpGogKe3K-O9K0oUuZ86ZeTHn9624vdPqlsQuTLLTbxd8fFAdIN19vTUeW93WJfCh8IN2PrdEz-vh_h0U38t3nZVMmAgleg1Wg4g62BGEBWUsqSzPQBFCntBYG3TMGhMIUtpMGA17fwDKnjco:1sqzc1:4pWNufTRAMCbnJoXi1IeqbPZQaBv6ysrtoVj6A5Pt5A",
+    "expire_date": "2024-10-02T18:41:13.663Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wna915khix5t2nl2sugo3koywygmdn5e",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAURP-FtSFwEbh16b7fQHhcpGogKe3K-O9K0oUuZ86ZeTHn9624vdPqlsQuTLLTbxd8fFAdIN19vTUeW93WJfCh8IN2PrdEz-vh_h0U38t3nZVMmAgleg1Wg4g62BGEBWUsqSzPQBFCntBYG3TMGhMIUtpMGA17fwDKnjco:1sfagp:32KgIppeCwJQ1MLDhAWVrXCxBw6U8TkgWhSkT8p2Ozg",
+    "expire_date": "2024-09-01T07:51:03.874Z"
+  }
+},
+{
+  "model": "test_app.category",
+  "pk": 1,
+  "fields": {
+    "name": "Візуальні бібліотеки",
+    "slug": "vizualni-biblioteki"
+  }
+},
+{
+  "model": "test_app.category",
+  "pk": 2,
+  "fields": {
+    "name": "Ігрові бібліотеки",
+    "slug": "igrovi-biblioteki"
+  }
+},
+{
+  "model": "test_app.category",
+  "pk": 3,
+  "fields": {
+    "name": "Веб бібліотеки",
+    "slug": "veb-biblioteki"
+  }
+},
+{
+  "model": "test_app.category",
+  "pk": 4,
+  "fields": {
+    "name": "Математичні бібліотеки",
+    "slug": "matematichni-biblioteki"
+  }
+},
+{
+  "model": "test_app.category",
+  "pk": 5,
+  "fields": {
+    "name": "Стандартні бібліотеки",
+    "slug": "standartni-biblioteki"
+  }
+},
+{
+  "model": "test_app.category",
+  "pk": 6,
+  "fields": {
+    "name": "Допоможні біблотеки",
+    "slug": "dopomozhni-bibloteki"
+  }
+},
+{
+  "model": "test_app.category",
+  "pk": 7,
+  "fields": {
+    "name": "Обробка даних",
+    "slug": "obrobka-danih"
+  }
+},
+{
+  "model": "test_app.tagpost",
+  "pk": 1,
+  "fields": {
+    "tag": "легкі-бібліотеки",
+    "slug": "legki-biblioteki"
+  }
+},
+{
+  "model": "test_app.tagpost",
+  "pk": 2,
+  "fields": {
+    "tag": "тяжкі-бібліотеки",
+    "slug": "tyazhki-biblioteki"
+  }
+},
+{
+  "model": "test_app.tagpost",
+  "pk": 3,
+  "fields": {
+    "tag": "ігрові-бібліотеки",
+    "slug": "igrovi-biblioteki"
+  }
+},
+{
+  "model": "test_app.tagpost",
+  "pk": 4,
+  "fields": {
+    "tag": "3д-бібліотеки",
+    "slug": "3d-biblioteki"
+  }
+},
+{
+  "model": "test_app.tagpost",
+  "pk": 5,
+  "fields": {
+    "tag": "2д-бібліотеки",
+    "slug": "2d-biblioteki"
+  }
+},
+{
+  "model": "test_app.tagpost",
+  "pk": 6,
+  "fields": {
+    "tag": "API",
+    "slug": "api"
+  }
+},
+{
+  "model": "test_app.tagpost",
+  "pk": 7,
+  "fields": {
+    "tag": "документації",
+    "slug": "dokumentaciyi"
+  }
+},
+{
+  "model": "test_app.tagpost",
+  "pk": 8,
+  "fields": {
+    "tag": "фреймворки",
+    "slug": "frejmvorki"
+  }
+},
+{
+  "model": "test_app.library",
+  "pk": 1,
+  "fields": {
+    "title": "Django",
+    "slug": "django",
+    "content": "Django - це відкритий фреймворк для веб-розробки, що базується на мові програмування Python. Він пропонує потужні засоби для швидкого створення веб-додатків, дотримуючись принципів шаблонного проектування та концепції \"Don't Repeat Yourself\". Django надає зручний інтерфейс для роботи з базами даних, автентифікацією користувачів, адміністративним інтерфейсом і багато іншого. Завдяки своїй гнучкості і потужності, Django є популярним вибором для розробки веб-додатків будь-якого розміру і складності.",
+    "photo": "photo/2024/52/28/dj_logo.png",
+    "time_create": "2024-04-27T08:35:59.882Z",
+    "time_update": "2025-05-30T16:20:07.533Z",
+    "cat": 3,
+    "author": 1,
+    "video_url": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+    "video_embed_url": "https://www.youtube.com/embed/jNQXAC9IVRw",
+    "likes": 0,
+    "dislikes": 0,
+    "tags": [
+      2,
+      6,
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "test_app.library",
+  "pk": 2,
+  "fields": {
+    "title": "Flask",
+    "slug": "flask",
+    "content": "Flask - це легковагий веб-фреймворк для Python, який розроблено з метою простоти та гнучкості. Незважаючи на свою компактність, Flask надає потужні можливості для швидкого створення веб-додатків. Він базується на принципі \"мінімального вмісту, максимальної відкритості\" і не нав'язує жорстких структур або компонентів, що дозволяє розробникам будувати додатки за їхніми власними уподобаннями.",
+    "photo": "",
+    "time_create": "2024-04-27T08:36:16.366Z",
+    "time_update": "2025-05-30T16:20:16.338Z",
+    "cat": 3,
+    "author": 1,
+    "video_url": null,
+    "video_embed_url": null,
+    "likes": 0,
+    "dislikes": 0,
+    "tags": [
+      1,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "test_app.library",
+  "pk": 3,
+  "fields": {
+    "title": "Pygame",
+    "slug": "pygame",
+    "content": "Pygame - це набір бібліотек для мови програмування Python, призначений для розробки ігор та мультимедійних додатків. Він забезпечує інструменти для роботи з графікою, звуком, анімацією та управлінням подіями, що дозволяє створювати різноманітні ігрові досвіди та інтерактивні програми\r\nтакож є відкритою бібліотекою, що підтримується спільнотою розробників, і має багато документації, прикладів та ресурсів для початківців. Він є популярним вибором для тих, хто хоче створювати ігри та інтерактивні додатки за допомогою Python.",
+    "photo": "",
+    "time_create": "2024-04-27T08:37:33.732Z",
+    "time_update": "2024-07-21T18:05:51.257Z",
+    "cat": 2,
+    "author": 1,
+    "video_url": null,
+    "video_embed_url": null,
+    "likes": 0,
+    "dislikes": 0,
+    "tags": []
+  }
+},
+{
+  "model": "test_app.library",
+  "pk": 4,
+  "fields": {
+    "title": "Panda3D",
+    "slug": "panda3d",
+    "content": "Panda3D - це відкритий рушій для розробки ігор та 3D-додатків, який надає потужні засоби для створення реалістичних та візуально захоплюючих віртуальних світів. Panda3D розроблений Disney Interactive Studios і був випущений ​​в 2002 році як вільне програмне забезпечення з відкритим кодом.Panda3D використовується як для створення ігор, так і для розробки 3D-симуляцій, віртуальної реальності, наукових досліджень та навчальних програм. Він є потужним інструментом для реалізації креативних ідей у віртуальному просторі.",
+    "photo": "",
+    "time_create": "2024-04-27T08:38:22.410Z",
+    "time_update": "2024-07-21T18:05:48.338Z",
+    "cat": 2,
+    "author": 1,
+    "video_url": null,
+    "video_embed_url": null,
+    "likes": 0,
+    "dislikes": 0,
+    "tags": []
+  }
+},
+{
+  "model": "test_app.library",
+  "pk": 5,
+  "fields": {
+    "title": "NumPy",
+    "slug": "numpy",
+    "content": "NumPy (Numerical Python) - це потужна бібліотека для мови програмування Python, яка дозволяє виконувати роботу з числовими данними, таку як масиви, вектори, матриці тощо. Основні функції NumPy включають в себе високоефективні масиви (ndarray), розширені функції для роботи з цими масивами, математичні функції, лінійну алгебру, генерацію псевдовипадкових чисел і багато іншого.",
+    "photo": "",
+    "time_create": "2024-04-28T08:05:00.997Z",
+    "time_update": "2024-07-21T18:05:46.137Z",
+    "cat": 4,
+    "author": 1,
+    "video_url": null,
+    "video_embed_url": null,
+    "likes": 0,
+    "dislikes": 0,
+    "tags": []
+  }
+},
+{
+  "model": "test_app.library",
+  "pk": 6,
+  "fields": {
+    "title": "Kivy",
+    "slug": "Kivy",
+    "content": "Kivy - це відкрите програмне забезпечення для розробки мультимедійних додатків, особливо таких, як ігри та застосунки з графічним інтерфейсом користувача (GUI). Основною метою Kivy є надання можливості створювати мультимедійні додатки, які можуть працювати на різних платформах, таких як Windows, macOS, Linux, Android і iOS.",
+    "photo": "",
+    "time_create": "2024-04-30T09:38:02.233Z",
+    "time_update": "2024-07-21T18:05:43.977Z",
+    "cat": 1,
+    "author": 1,
+    "video_url": null,
+    "video_embed_url": null,
+    "likes": 0,
+    "dislikes": 0,
+    "tags": []
+  }
+},
+{
+  "model": "test_app.library",
+  "pk": 7,
+  "fields": {
+    "title": "PyQt5",
+    "slug": "pyqt5",
+    "content": "PyQt5 - це бібліотека для створення графічних користувацьких інтерфейсів (GUI) в Python. Вона надає можливості для створення додатків за допомогою різних віджетів, макетів і подійної моделі. PyQt5 базується на бібліотеці Qt, що забезпечує високу продуктивність та кросплатформенність. Розробники можуть створювати потужні та інтерактивні додатки з використанням PyQt5, включаючи ігри, інструменти аналізу даних та інше.",
+    "photo": "",
+    "time_create": "2024-05-04T09:42:42.905Z",
+    "time_update": "2024-07-21T18:05:41.610Z",
+    "cat": 1,
+    "author": 1,
+    "video_url": null,
+    "video_embed_url": null,
+    "likes": 0,
+    "dislikes": 0,
+    "tags": []
+  }
+},
+{
+  "model": "test_app.library",
+  "pk": 8,
+  "fields": {
+    "title": "os",
+    "slug": "os",
+    "content": "Бібліотека os в Python є стандартною бібліотекою, яка надає численні функції для взаємодії з операційною системою. Вона дозволяє виконувати операції з файлами і каталогами, керувати процесами та отримувати інформацію про навколишнє середовище",
+    "photo": "",
+    "time_create": "2024-05-21T08:20:25.040Z",
+    "time_update": "2024-07-21T18:05:39.136Z",
+    "cat": 5,
+    "author": 1,
+    "video_url": null,
+    "video_embed_url": null,
+    "likes": 0,
+    "dislikes": 0,
+    "tags": []
+  }
+},
+{
+  "model": "test_app.library",
+  "pk": 9,
+  "fields": {
+    "title": "sys",
+    "slug": "sys",
+    "content": "Бібліотека sys в Python є стандартним модулем, який надає доступ до деяких змінних і функцій, які взаємодіють з інтерпретатором Python. Вона корисна для роботи з параметрами командного рядка, обробки виключень, налаштування шляху пошуку модулів та іншими системними завданнями.",
+    "photo": "",
+    "time_create": "2024-05-21T08:34:51.740Z",
+    "time_update": "2024-07-21T18:05:36.801Z",
+    "cat": 5,
+    "author": 1,
+    "video_url": null,
+    "video_embed_url": null,
+    "likes": 0,
+    "dislikes": 0,
+    "tags": []
+  }
+},
+{
+  "model": "test_app.library",
+  "pk": 10,
+  "fields": {
+    "title": "re",
+    "slug": "re",
+    "content": "Бібліотека re в Python — це модуль для роботи з регулярними виразами. Регулярні вирази дозволяють виконувати потужні пошуки і маніпуляції з текстом на основі шаблонів. Вони є особливо корисними для перевірки відповідності рядків певному формату, пошуку та заміни тексту, а також для розбивки тексту на частини.",
+    "photo": "",
+    "time_create": "2024-06-23T16:26:33.852Z",
+    "time_update": "2024-08-18T07:52:17.570Z",
+    "cat": 5,
+    "author": 1,
+    "video_url": null,
+    "video_embed_url": null,
+    "likes": 0,
+    "dislikes": 0,
+    "tags": []
+  }
+},
+{
+  "model": "test_app.library",
+  "pk": 11,
+  "fields": {
+    "title": "title",
+    "slug": "test",
+    "content": "test content",
+    "photo": "",
+    "time_create": "2024-08-18T07:42:44.136Z",
+    "time_update": "2024-12-24T19:29:47.170Z",
+    "cat": 2,
+    "author": 1,
+    "video_url": null,
+    "video_embed_url": null,
+    "likes": 0,
+    "dislikes": 0,
+    "tags": []
+  }
+},
+{
+  "model": "test_app.library",
+  "pk": 18,
+  "fields": {
+    "title": "tesr",
+    "slug": "tesr",
+    "content": "",
+    "photo": "",
+    "time_create": "2024-11-05T22:33:15.386Z",
+    "time_update": "2024-12-24T19:17:54.269Z",
+    "cat": null,
+    "author": 1,
+    "video_url": "https://www.youtube.com/watch?v=hd2fPEh_NVg",
+    "video_embed_url": null,
+    "likes": 0,
+    "dislikes": 0,
+    "tags": []
+  }
+},
+{
+  "model": "test_app.reaction",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "post": 2,
+    "reaction": "D"
+  }
+},
+{
+  "model": "test_app.reaction",
+  "pk": 6,
+  "fields": {
+    "user": 3,
+    "post": 2,
+    "reaction": "L"
+  }
+},
+{
+  "model": "test_app.reaction",
+  "pk": 8,
+  "fields": {
+    "user": 3,
+    "post": 1,
+    "reaction": "L"
+  }
+},
+{
+  "model": "test_app.reaction",
+  "pk": 9,
+  "fields": {
+    "user": 1,
+    "post": 1,
+    "reaction": "L"
+  }
+},
+{
+  "model": "test_app.reaction",
+  "pk": 10,
+  "fields": {
+    "user": 1,
+    "post": 18,
+    "reaction": "D"
+  }
+},
+{
+  "model": "test_app.comment",
+  "pk": 1,
+  "fields": {
+    "post": 1,
+    "author": 1,
+    "text": "Достатньо непоганий фреймворк",
+    "created_date": "2024-07-31T09:48:57.086Z",
+    "unapproved": false
+  }
+},
+{
+  "model": "test_app.comment",
+  "pk": 2,
+  "fields": {
+    "post": 1,
+    "author": 1,
+    "text": "gdfagwegwegwegwegwegwegwe",
+    "created_date": "2024-07-31T10:02:44.121Z",
+    "unapproved": false
+  }
+},
+{
+  "model": "test_app.comment",
+  "pk": 3,
+  "fields": {
+    "post": 1,
+    "author": 1,
+    "text": "fsafasfas",
+    "created_date": "2024-12-24T15:01:47.878Z",
+    "unapproved": false
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 15,
+  "fields": {
+    "challenge": "PLZA",
+    "response": "plza",
+    "hashkey": "a9c9142d469b1e5b896570f02dda8e590c24de09",
+    "expiration": "2024-07-21T15:45:32.467Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 16,
+  "fields": {
+    "challenge": "EQPA",
+    "response": "eqpa",
+    "hashkey": "7886b3e1939bb796837ff9409e39b53c885a7abe",
+    "expiration": "2024-07-21T15:45:37.326Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 17,
+  "fields": {
+    "challenge": "PZTS",
+    "response": "pzts",
+    "hashkey": "19bc2570ced048890bd88531ea1267d994c1f1b5",
+    "expiration": "2024-07-31T10:07:18.227Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 18,
+  "fields": {
+    "challenge": "YIZB",
+    "response": "yizb",
+    "hashkey": "599667bb5da275b3560270c33d96c8039b8bfbdf",
+    "expiration": "2024-08-18T09:15:14.745Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 19,
+  "fields": {
+    "challenge": "FAQY",
+    "response": "faqy",
+    "hashkey": "ea95e4628476786f9a24d5d9af4b0d66c5d7cd1e",
+    "expiration": "2024-08-19T17:10:34.587Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 20,
+  "fields": {
+    "challenge": "SOAU",
+    "response": "soau",
+    "hashkey": "6e8e2534ad7db370885019313630a3e9d3657f72",
+    "expiration": "2024-09-18T18:38:06.864Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 21,
+  "fields": {
+    "challenge": "YJYR",
+    "response": "yjyr",
+    "hashkey": "74019b8014cdfc3fb34f8c331ffd6d9dfa5410c9",
+    "expiration": "2024-09-18T18:38:15.488Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 22,
+  "fields": {
+    "challenge": "BEYO",
+    "response": "beyo",
+    "hashkey": "251567d7577e6b7c0433740e62085bc383eaaea5",
+    "expiration": "2024-09-18T18:38:16.168Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 23,
+  "fields": {
+    "challenge": "YEHA",
+    "response": "yeha",
+    "hashkey": "de42edd3b7c47497f2b9360e1264500287c28884",
+    "expiration": "2024-09-18T18:38:16.728Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 24,
+  "fields": {
+    "challenge": "TVGL",
+    "response": "tvgl",
+    "hashkey": "36a99d3c2cb1c6713930debbda8d6fb211271fb7",
+    "expiration": "2024-09-18T18:38:17.240Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 25,
+  "fields": {
+    "challenge": "HDTW",
+    "response": "hdtw",
+    "hashkey": "09999d2303ee5dfc1f31e08a7b267f3de15c392c",
+    "expiration": "2024-09-18T18:38:17.766Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 26,
+  "fields": {
+    "challenge": "CNQU",
+    "response": "cnqu",
+    "hashkey": "06f21b97312e1555bf587839b6894dada55cf096",
+    "expiration": "2024-09-18T18:38:23.209Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 27,
+  "fields": {
+    "challenge": "NCRG",
+    "response": "ncrg",
+    "hashkey": "a16f748e3bc51432daa5ddf18fb732c50509964f",
+    "expiration": "2024-11-05T21:52:23.853Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 28,
+  "fields": {
+    "challenge": "PJKZ",
+    "response": "pjkz",
+    "hashkey": "0d41d22cd2bcca95bb7491c50cbfaedb18e343df",
+    "expiration": "2024-11-05T22:51:27.487Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 29,
+  "fields": {
+    "challenge": "QSCU",
+    "response": "qscu",
+    "hashkey": "9811168c4536c81541af46fa68062eb66cee3b92",
+    "expiration": "2024-11-05T22:52:11.879Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 30,
+  "fields": {
+    "challenge": "TZBU",
+    "response": "tzbu",
+    "hashkey": "718311fad92d2ec9621b9c63f3014f326ecb0d59",
+    "expiration": "2024-11-26T11:29:43.589Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 31,
+  "fields": {
+    "challenge": "CWXX",
+    "response": "cwxx",
+    "hashkey": "55dbbd95735de0f63cace2519540ad028b6d4264",
+    "expiration": "2024-12-14T16:34:51.015Z"
+  }
+},
+{
+  "model": "captcha.captchastore",
+  "pk": 32,
+  "fields": {
+    "challenge": "BCFW",
+    "response": "bcfw",
+    "hashkey": "b5531847973d95093602a2ae4a0883ed1600d92f",
+    "expiration": "2024-12-24T19:34:24.772Z"
+  }
+}
+]

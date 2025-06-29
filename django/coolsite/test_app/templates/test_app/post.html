@@ -1,0 +1,82 @@
+{% extends 'test_app/pybase.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'test_app/css/post.css' %}">
+
+{% block content %}
+<div class="author">
+    <i>by: {{ post.author }}</i>
+</div>
+<h1>{{ post.title }}</h1>
+
+{% if post.photo %}
+<p><img class="img-article-left" src="{{ post.photo.url }}"></p>
+{% endif %}
+
+{{ post.content|linebreaks }}
+
+{% if post.video_embed_url %}
+<div class="video-container">
+    <iframe
+        width="560"
+        height="315"
+        src="{{ post.video_embed_url }}"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        loading="lazy">
+    </iframe>
+</div>
+{% endif %}
+
+
+<div class="tags">
+    <h4>Теги:</h4>
+    <ul>
+        {% for tag in post.tags.all %}
+            <li><a href="{{ tag.get_absolute_url }}">{{ tag.tag }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div>
+    <form action="{% url 'react_to_post' post.id 'L' %}" method="POST" style="display: inline;">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">
+            👍  Лайк ({{ post.likes }})
+        </button>
+    </form>
+
+    <form action="{% url 'react_to_post' post.id 'D' %}" method="POST" style="display: inline;">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">
+            👎 Дизлайк ({{ post.dislikes }})
+        </button>
+    </form>
+</div>
+
+<h3>Залишити коментар</h3>
+{% if user.is_authenticated %}
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Додати коментар</button>
+    </form>
+{% else %}
+    <p>Вам потрібно увійти, щоб залишити коментар.</p>
+{% endif %}
+
+<h3>Коментарі</h3>
+{% if comments %}
+    <div class="comments">
+        {% for comment in comments %}
+            <div class="comment">
+                <p>{{ comment.text }}</p>
+                <p><small>by {{ comment.author }} on {{ comment.created_date }}</small></p>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>Коментарів поки немає.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'test_app/pybase.html' %}
+{% load static%}
+
+{% block content %}
+<h2>Account Settings</h2>
+<link type="text/css" href="{% static 'test_app/css/ttt.css' %}" rel="stylesheet" />
+
+<!-- Profile Update Form -->
+<form method="POST" action="">
+    {% csrf_token %}
+    {{ user_form.as_p }}
+    <button type="submit" name="update_profile">Update Profile</button>
+</form>
+
+<hr>
+
+<!-- Password Change Form -->
+<h2>Change Password</h2>
+<form method="POST" action="">
+    {% csrf_token %}
+    {{ password_form.as_p }}
+    <button type="submit" name="change_password">Change Password</button>
+</form>
+{% endblock %}

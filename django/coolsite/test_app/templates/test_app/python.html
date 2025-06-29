@@ -1,0 +1,67 @@
+{% extends 'test_app/pybase.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'test_app/css/styles.css' %}">
+</head>
+<body>
+
+<table class="table-page" border="0" cellpadding="0" cellspacing="0">
+<tr><td valign="top">
+<table class="table-content" border="0" cellpadding="0" cellspacing="0">
+<tr>
+
+<td valign="top" class="content">
+
+<!-- Блок контента -->
+
+    <div class="content-text">
+        {% block content %}
+        
+        <form method="GET" action="{% url 'search' %}" class="search-form">
+            <input type="text" name="q" placeholder="Search..." id="search-input">
+            <button type="submit">Search</button>
+        </form>
+
+        {% if results %}
+        <ul class="search-results">
+            {% for result in results %}
+                <li><a href="{{ result.get_absolute_url }}">{{ result.title }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        
+        <ul class="list-articles">
+            {% for p in posts %}
+                <li><div class="article-panel">
+                    <p class="first">Категорія: {{p.cat}}</p> 
+                    <p class="last">Дата: {{p.time_update|date:"d-m-Y H:i:s"}}</p>
+                </div>
+                <h2>{{p.title}}</h2>
+                {% autoescape on %}
+                {{p.content|linebreaks|truncatewords:50}}
+                {% endautoescape %}
+                <div class="clear"></div>
+                <p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читати більше..</a></p>
+                </li>
+            {% endfor %}
+        </ul>
+        {% endblock %}
+    </div>
+<!-- Кінець блока контента -->
+
+{% comment %} </td></tr></table>
+</td></tr>
+<!-- Footer -->
+<tr><td valign="top">
+    <div id="footer">
+        <p>&copy; 2024 Часкове або повне копіювання будь чого з данного сайта для розповсюдження на інших ресурсах дозволено.</p>
+    </div>
+</td></tr></table> {% endcomment %}
+<!-- Кінець footer і сторінки -->
+</body>
+</html>

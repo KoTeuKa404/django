@@ -1,0 +1,112 @@
+/* custom_admin.css */
+
+/* Основний контейнер */
+body {
+    background-color: #f8f9fa; /* Світло-сірий фон */
+}
+
+/* Заголовок */
+#header {
+    background-color: #3F4137; /* Темно-сірий фон */
+    color: #ffc107; /* Яскраво-жовтий текст */
+}
+
+#header h1 a {
+    color: #ffc107; /* Яскраво-жовтий текст для заголовка */
+}
+
+#user-tools a {
+    color: #ffc107; /* Яскраво-жовтий текст для посилань */
+}
+
+/* Основний вміст */
+#content {
+    background-color: #ffffff; /* Білий фон */
+    color: #343a40; /* Темно-сірий текст */
+}
+
+/* Заголовки модулів */
+.module h2 {
+    background-color: #ffc107; /* Яскраво-жовтий фон для заголовків модулів */
+    color: #343a40; /* Темно-сірий текст */
+    border: none;
+    padding: 10px;
+}
+
+/* Таблиці */
+#content-main th {
+    background-color: #ffc10780; /* Темно-сірий фон для заголовків таблиці */
+    color: #ffc107; /* Яскраво-жовтий текст */
+}
+
+#content-main td {
+    background-color: #ffffff; /* Білий фон для клітинок таблиці */
+    color: #343a40; /* Темно-сірий текст */
+}
+
+/* Кнопки */
+button,
+input[type="submit"] {
+    background-color: #ffc107; /* Яскраво-жовті кнопки */
+    color: #343a40; /* Темно-сірий текст */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px; /* Закруглені кути */
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #e0a800; /* Трохи темніший жовтий при наведенні */
+}
+
+/* Посилання */
+a {
+    color: #ffc107; /* Яскраво-жовті посилання */
+}
+
+a:hover {
+    color: #e0a800; /* Трохи темніший жовтий при наведенні */
+}
+
+/* Останні дії */
+#recent-actions-title {
+    color: #ffc107; /* Яскраво-жовтий текст для заголовку останніх дій */
+}
+
+#recent-actions-module .module {
+    background-color: #ffffff; /* Білий фон для модулів останніх дій */
+    color: #343a40; /* Темно-сірий текст */
+    border: 1px solid #ddd; /* Сірий бордюр */
+}
+
+/* Кнопки "Add" */
+a.addlink {
+    background-color: #ffc107; /* Яскраво-жовтий фон для кнопки "Add" */
+    color: #343a40; /* Темно-сірий текст */
+    border: 1px solid #ffc107;
+    padding: 5px 10px;
+    border-radius: 4px; /* Закруглені кути */
+    text-decoration: none;
+}
+
+a.addlink:hover {
+    background-color: #e0a800; /* Трохи темніший жовтий при наведенні */
+    border-color: #e0a800;
+}
+
+/* Кнопки "Change" */
+a.changelink {
+    background-color: #ffc107; /* Яскраво-жовтий фон для кнопки "Change" */
+    color: #343a40; /* Темно-сірий текст */
+    border: 1px solid #ffc107;
+    padding: 5px 10px;
+    border-radius: 4px; /* Закруглені кути */
+    text-decoration: none;
+}
+
+a.changelink:hover {
+    background-color: #e0a800; /* Трохи темніший жовтий при наведенні */
+    border-color: #e0a800;
+}

@@ -1,0 +1,19 @@
+{% extends 'test_app/pybase.html' %}
+
+{% block content %}
+<h1>Результати пошуку</h1>
+<form method="get" action="{% url 'search' %}" class="search-form">
+    <input type="text" name="q" value="{{ query }}" placeholder="Пошук...">
+    <button type="submit">Пошук</button>
+</form>
+
+{% if results %}
+    <ul>
+        {% for result in results %}
+            <li><a href="{% url 'post' result.slug %}">{{ result.title }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Нічого не знайдено.</p>
+{% endif %}
+{% endblock %}
