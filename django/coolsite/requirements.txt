@@ -7,4 +7,5 @@ djoser
 django-captcha
 django-debug-toolbar
 django-simple-captcha
+aiofiles
 
