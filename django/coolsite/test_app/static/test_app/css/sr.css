@@ -640,8 +640,8 @@ nav.list-pages ul li.page-num a.next {
     margin: 0;
 }
 .tags-list li {
-    display: inline-block;
-    margin: 5px;
+    display: block;
+    margin: 5px 0;
 }
 .tags-list a {
     text-decoration: none;
@@ -683,9 +683,9 @@ nav.list-pages ul li.page-num a.next {
 }
 
 .tags ul li {
-    display: inline-block;
+    display: block;
     background-color: #f1f1f1;
-    margin: 5px;
+    margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
 }
@@ -708,9 +708,9 @@ nav.list-pages ul li.page-num a.next {
 }
 
 .tags ul li {
-    display: inline-block;
+    display: block;
     background-color: #f1f1f1;
-    margin: 5px;
+    margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
 }
