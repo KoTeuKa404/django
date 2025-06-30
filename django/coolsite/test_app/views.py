@@ -1,4 +1,6 @@
 import os
+import aiofiles
+from asgiref.sync import sync_to_async
 ###############################################################################>
 from django.contrib.auth import logout, login
 from django.contrib.auth.views import LoginView
@@ -176,7 +178,7 @@ class help(DataMixin, FormView):
         c_def = self.get_user_context(title="Зворотній звязок")
         return dict(list(context.items()) + list(c_def.items()))
 
-    def form_valid(self, form):
+    async def form_valid(self, form):
         data = form.cleaned_data
         report_content = f"Name: {data['name']}\nEmail: {data['email']}\nContent: {data['content']}\n"
 
@@ -184,8 +186,8 @@ class help(DataMixin, FormView):
         os.makedirs(report_dir, exist_ok=True)
         report_file_path = os.path.join(report_dir, f"report_{data['name']}_{data['email']}.txt")
 
-        with open(report_file_path, 'w', encoding='utf-8') as report_file:
-            report_file.write(report_content)
+        async with aiofiles.open(report_file_path, 'w', encoding='utf-8') as report_file:
+            await report_file.write(report_content)
 
         return redirect('python')
 
@@ -195,7 +197,7 @@ class SearchView(DataMixin, ListView):
     template_name = 'test_app/search_results.html'
     context_object_name = 'results'
 
-    def get_queryset(self):
+    async def get_queryset(self):
         query = self.request.GET.get('q')
         if query:
             if query.startswith('#'):
@@ -253,13 +255,13 @@ class AccountSettingsView(LoginRequiredMixin, TemplateView,DataMixin):
         return self.render_to_response(context)
 
 
-def react_to_post(request, post_id, reaction_type):
-    post = get_object_or_404(library, id=post_id)
-    user_reaction, created = Reaction.objects.get_or_create(user=request.user, post=post)
+async def react_to_post(request, post_id, reaction_type):
+    post = await library.objects.aget(id=post_id)
+    user_reaction, created = await Reaction.objects.aget_or_create(user=request.user, post=post)
 
     if not created:
         if user_reaction.reaction == reaction_type:
-            user_reaction.delete() 
+            await sync_to_async(user_reaction.delete)()
             if reaction_type == 'L':
                 post.likes -= 1
             else:
@@ -272,16 +274,16 @@ def react_to_post(request, post_id, reaction_type):
                 post.likes += 1
                 post.dislikes -= 1
             user_reaction.reaction = reaction_type
-            user_reaction.save()
+            await sync_to_async(user_reaction.save)()
     else:
         if reaction_type == 'L':
             post.likes += 1
         else:
             post.dislikes += 1
         user_reaction.reaction = reaction_type
-        user_reaction.save()
+        await sync_to_async(user_reaction.save)()
 
-    post.save()
+    await sync_to_async(post.save)()
 
     return redirect('post', post_slug=post.slug)
 
@@ -428,9 +430,9 @@ def test(request):
 
 
 #Main
-def main(request):
-    posts = library.objects.all()
-    categories = Category.objects.all()
+async def main(request):
+    posts = await sync_to_async(list)(library.objects.all())
+    categories = await sync_to_async(list)(Category.objects.all())
 
     context = {
         'posts': posts,
