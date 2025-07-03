@@ -28,16 +28,17 @@ from asgiref.sync import sync_to_async
 from .forms import *
 from .models import *
 from .utils import *
-from .API.serializers import librarySerializer
+from .API.serializers import LibrarySerializer
 from .permission import *
 
 ###############################################################################>
 # venv\Scripts\activate
 ###############################################################################>
-# docker compose up
 # docker compose restart web
+# docker compose up
 # docker compose down
 # docker compose up -d --build
+
 
 
 class Python(DataMixin, ListView):
@@ -327,21 +328,21 @@ class Pagination(PageNumberPagination):
     
 class APIList(generics.ListCreateAPIView):
     queryset = library.objects.all()
-    serializer_class = librarySerializer
+    serializer_class = LibrarySerializer
     permission_classes = (IsAuthenticatedOrReadOnly,)
     authentication_classes = (JWTAuthentication,)
     pagination_class=Pagination
     
 class APIUpdate(generics.RetrieveUpdateAPIView):
     queryset=library.objects.all()
-    serializer_class=librarySerializer
+    serializer_class=LibrarySerializer
     permission_classes=(IsAdminOrOwnerOrReadOnly,) 
     # permission_classes=(IsAuthenticated,) 
     authentication_classes=(TokenAuthentication,)
     
 class APIDestr(generics.RetrieveUpdateDestroyAPIView):
     queryset=library.objects.all()
-    serializer_class=librarySerializer
+    serializer_class=LibrarySerializer
     permission_classes=(IsAdminOrOwnerOrReadOnly,)
 
 

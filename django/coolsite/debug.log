@@ -15744,3 +15744,65 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 914, in _resolve_lookup
     raise VariableDoesNotExist(
 django.template.base.VariableDoesNotExist: Failed lookup for key [results] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x70a6a7939f80>>, 'request': <WSGIRequest: GET '/category/veb-biblioteki/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x70a6a9128e90>>, 'perms': PermWrapper(<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x70a6a9128e90>>), 'messages': <FallbackStorage: request=<WSGIRequest: GET '/category/veb-biblioteki/'>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'paginator': <django.core.paginator.Paginator object at 0x70a6a79b8f90>, 'page_obj': <Page 1 of 1>, 'is_paginated': False, 'object_list': <QuerySet [<library: Django>, <library: Flask>]>, 'posts': <QuerySet [<library: Django>, <library: Flask>]>, 'view': <test_app.views.show_category object at 0x70a6a79b8e10>, 'title': 'Категорія - Веб бібліотеки', 'cat_selected': 3, 'menu': [{'title': 'Про сайт', 'url_name': 'python'}, {'title': 'Головний сайт ', 'url_name': 'main'}], 'cats': <QuerySet [<Category: Візуальні бібліотеки>, <Category: Ігрові бібліотеки>, <Category: Веб бібліотеки>, <Category: Математичні бібліотеки>, <Category: Стандартні бібліотеки>, <Category: Допоможні біблотеки>, <Category: Обробка даних>]>}, {'block': <Block Node: content. Contents: [<TextNode: '\n        \n        <form m'>, <URLNode view_name=''search'' args=[] kwargs={} as=None>, <TextNode: '" class="search-form">\n  '>, <IfNode>, <TextNode: '\n        \n        <ul cla'>, <ForNode: for p in posts, tail_len: 11>, <TextNode: '\n        </ul>\n        '>]>}]
+Exception while resolving variable 'results' in template 'test_app/python.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/context.py", line 88, in __getitem__
+    raise KeyError(key)
+KeyError: 'results'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 897, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'RequestContext' has no attribute 'results'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'results'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [results] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7db072d66660>>, 'request': <WSGIRequest: GET '/python/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7db072932dd0>>, 'perms': PermWrapper(<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7db072932dd0>>), 'messages': <FallbackStorage: request=<WSGIRequest: GET '/python/'>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'paginator': <django.core.paginator.Paginator object at 0x7db07298c690>, 'page_obj': <Page 1 of 3>, 'is_paginated': True, 'object_list': <QuerySet [<library: Django>, <library: Flask>, <library: Pygame>, <library: Panda3D>]>, 'posts': <QuerySet [<library: Django>, <library: Flask>, <library: Pygame>, <library: Panda3D>]>, 'view': <test_app.views.Python object at 0x7db072901b10>, 'title': 'Python бібліотеки', 'menu': [{'title': 'Про сайт', 'url_name': 'python'}, {'title': 'Головний сайт ', 'url_name': 'main'}], 'cats': <QuerySet [<Category: Візуальні бібліотеки>, <Category: Ігрові бібліотеки>, <Category: Веб бібліотеки>, <Category: Математичні бібліотеки>, <Category: Стандартні бібліотеки>, <Category: Допоможні біблотеки>, <Category: Обробка даних>]>, 'cat_selected': None}, {'block': <Block Node: content. Contents: [<TextNode: '\n        \n        <form m'>, <URLNode view_name=''search'' args=[] kwargs={} as=None>, <TextNode: '" class="search-form">\n  '>, <IfNode>, <TextNode: '\n        \n        <ul cla'>, <ForNode: for p in posts, tail_len: 11>, <TextNode: '\n        </ul>\n        '>]>}]
+Exception while resolving variable 'page_obj' in template 'test_app/post.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/context.py", line 88, in __getitem__
+    raise KeyError(key)
+KeyError: 'page_obj'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 897, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'RequestContext' has no attribute 'page_obj'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'page_obj'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 914, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [page_obj] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'zHAJNyPGvCIVtWE9v8g7Qp5QOWI3ZG0UJNX1EkPeYOdfuwP1S73H9Fvg5dWmA8pP'>, 'request': <WSGIRequest: GET '/post/django/'>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7db0729b7090>>, 'perms': PermWrapper(<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7db0729b7090>>), 'messages': <FallbackStorage: request=<WSGIRequest: GET '/post/django/'>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'object': <library: Django>, 'post': <library: Django>, 'form': <CommentForm bound=False, valid=Unknown, fields=(text)>, 'view': <test_app.views.ShowPost object at 0x7db0729b7490>, 'comments': <QuerySet [<Comment: Достатньо непоганий фреймворк>, <Comment: gdfagwegwegwegwegwegwegwe>, <Comment: fsafasfas>]>, 'title': <library: Django>, 'menu': [{'title': 'Про сайт', 'url_name': 'python'}, {'title': 'Головний сайт ', 'url_name': 'main'}], 'cats': <QuerySet [<Category: Візуальні бібліотеки>, <Category: Ігрові бібліотеки>, <Category: Веб бібліотеки>, <Category: Математичні бібліотеки>, <Category: Стандартні бібліотеки>, <Category: Допоможні біблотеки>, <Category: Обробка даних>]>, 'cat_selected': None}]
