@@ -1,5 +1,3 @@
-version: '3.9'
-
 services:
   db:
     image: postgres:15
@@ -10,6 +8,22 @@ services:
       - pgdata:/var/lib/postgresql/data/
     ports:
       - "5432:5432"
+
+  mysql:
+    image: mysql:8.0
+    restart: always
+    env_file:
+      - .env
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DB}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - mysqldata:/var/lib/mysql
+    ports:
+      - "3306:3306"
 
   adminer:
     image: adminer
@@ -31,6 +45,7 @@ services:
       - .env
     depends_on:
       - db
+      - mysql
 
   nginx:
     image: nginx:1.25
@@ -48,3 +63,4 @@ volumes:
   pgdata:
   static_volume:
   media_volume:
+  mysqldata:

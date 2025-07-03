@@ -29,13 +29,13 @@ class TagPost(models.Model):
 
 
 class library(models.Model):
-    title = models.CharField(max_length=256)
+    title = models.CharField(max_length=256, db_index=True)
     slug = models.SlugField(max_length=256, unique=True, db_index=True)
     content = models.TextField(blank=True)
     photo = models.ImageField(upload_to="photo/%Y/%M/%d/", null=True, blank=True)
     time_create = models.DateTimeField(auto_now_add=True)
     time_update = models.DateTimeField(auto_now=True)
-    cat = models.ForeignKey('Category', on_delete=models.PROTECT, null=True, blank=True)
+    cat = models.ForeignKey('Category', on_delete=models.PROTECT, null=True, blank=True, db_index=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True,unique=False)
 
     video_url = models.URLField(max_length=300, null=True, blank=True)

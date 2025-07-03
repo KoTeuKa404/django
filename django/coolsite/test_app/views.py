@@ -34,6 +34,10 @@ from rest_framework.pagination import PageNumberPagination
 ###############################################################################>
 # venv\Scripts\activate
 ###############################################################################>
+# docker compose up
+# docker compose restart web
+# docker compose down
+# docker compose up -d --build
 
 
 class python(DataMixin, ListView):
@@ -178,7 +182,7 @@ class help(DataMixin, FormView):
         c_def = self.get_user_context(title="Зворотній звязок")
         return dict(list(context.items()) + list(c_def.items()))
 
-    async def form_valid(self, form):
+    def form_valid(self, form):
         data = form.cleaned_data
         report_content = f"Name: {data['name']}\nEmail: {data['email']}\nContent: {data['content']}\n"
 
@@ -186,8 +190,8 @@ class help(DataMixin, FormView):
         os.makedirs(report_dir, exist_ok=True)
         report_file_path = os.path.join(report_dir, f"report_{data['name']}_{data['email']}.txt")
 
-        async with aiofiles.open(report_file_path, 'w', encoding='utf-8') as report_file:
-            await report_file.write(report_content)
+        with open(report_file_path, 'w', encoding='utf-8') as report_file:
+            report_file.write(report_content)
 
         return redirect('python')
 
@@ -197,7 +201,7 @@ class SearchView(DataMixin, ListView):
     template_name = 'test_app/search_results.html'
     context_object_name = 'results'
 
-    async def get_queryset(self):
+    def get_queryset(self):
         query = self.request.GET.get('q')
         if query:
             if query.startswith('#'):
@@ -245,7 +249,7 @@ class AccountSettingsView(LoginRequiredMixin, TemplateView,DataMixin):
         elif 'change_password' in request.POST:
             if password_form.is_valid():
                 user = password_form.save()
-                update_session_auth_hash(request, user)  # Important!
+                update_session_auth_hash(request, user)
                 messages.success(request, 'Your password has been changed successfully.')
                 return redirect('account_settings')
 
@@ -263,16 +267,20 @@ async def react_to_post(request, post_id, reaction_type):
         if user_reaction.reaction == reaction_type:
             await sync_to_async(user_reaction.delete)()
             if reaction_type == 'L':
-                post.likes -= 1
+                if post.likes > 0:
+                    post.likes -= 1
             else:
-                post.dislikes -= 1
+                if post.dislikes > 0:
+                    post.dislikes -= 1
         else:
             if user_reaction.reaction == 'L':
-                post.likes -= 1
+                if post.likes > 0:
+                    post.likes -= 1
                 post.dislikes += 1
             else:
                 post.likes += 1
-                post.dislikes -= 1
+                if post.dislikes > 0:
+                    post.dislikes -= 1
             user_reaction.reaction = reaction_type
             await sync_to_async(user_reaction.save)()
     else:
@@ -284,8 +292,8 @@ async def react_to_post(request, post_id, reaction_type):
         await sync_to_async(user_reaction.save)()
 
     await sync_to_async(post.save)()
-
     return redirect('post', post_slug=post.slug)
+
 
 
 def pageNotFound(request, exception):
