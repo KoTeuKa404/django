@@ -40,7 +40,7 @@ from .permission import *
 # docker compose up -d --build
 
 
-class python(DataMixin, ListView):
+class Python(DataMixin, ListView):
     model = library
     template_name = 'test_app/python.html'
     context_object_name = 'posts'
@@ -71,7 +71,7 @@ class add_page(LoginRequiredMixin,DataMixin,CreateView):
         return dict(list(context.items())+list(c_def.items()))
     
 
-class show_post(DataMixin, FormMixin, DetailView):
+class ShowPost(DataMixin, FormMixin, DetailView):
     model = library
     template_name = 'test_app/post.html'
     slug_url_kwarg = 'post_slug'
@@ -104,7 +104,7 @@ class show_post(DataMixin, FormMixin, DetailView):
 
 
 
-class show_category(DataMixin, ListView):
+class ShowCategory(DataMixin, ListView):
     model = library
     template_name = 'test_app/python.html'
     context_object_name = 'posts'
@@ -172,7 +172,7 @@ class LoginUser(DataMixin, LoginView):
         return reverse_lazy('python')
 
 
-class help(DataMixin, FormView):
+class Help(DataMixin, FormView):
     form_class = ContactForm
     template_name = 'test_app/help.html'
     success_url = reverse_lazy('python')
@@ -219,7 +219,7 @@ class SearchView(DataMixin, ListView):
         return dict(list(context.items()) + list(c_def.items()))
 
 
-def logout_user(request):
+def LogoutUser(request):
     logout(request)
     return redirect('python')
 
