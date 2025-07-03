@@ -1,36 +1,36 @@
 import os
 import aiofiles
-from asgiref.sync import sync_to_async
-###############################################################################>
+
 from django.contrib.auth import logout, login
 from django.contrib.auth.views import LoginView
 from django.shortcuts import render, redirect, get_object_or_404
-from django.urls import reverse_lazy, reverse
+from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, FormView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import FormMixin
-###############################################################################>
-from django.views.generic import UpdateView
-from django.contrib.auth.views import PasswordChangeView
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.contrib.auth import update_session_auth_hash
 from django.shortcuts import render
 from django.views.generic import TemplateView
-###############################################################################>
+from django.shortcuts import render
+
+from rest_framework.response import *
+from rest_framework.views import *
+from rest_framework import generics, viewsets 
+from rest_framework.permissions import IsAuthenticatedOrReadOnly,IsAdminUser,IsAuthenticated
+from rest_framework.authentication import TokenAuthentication
+from rest_framework_simplejwt.authentication import JWTAuthentication
+from rest_framework.pagination import PageNumberPagination
+
+from asgiref.sync import sync_to_async
+
 from .forms import *
 from .models import *
 from .utils import *
 from .API.serializers import librarySerializer
 from .permission import *
-###############################################################################>
-from rest_framework.response import *
-from rest_framework.views import *
-from rest_framework import generics, viewsets, mixins 
-from django.shortcuts import render
-from rest_framework.permissions import IsAuthenticatedOrReadOnly,IsAdminUser,IsAuthenticated
-from rest_framework.authentication import TokenAuthentication
-from rest_framework_simplejwt.authentication import JWTAuthentication
-from rest_framework.pagination import PageNumberPagination
+
 ###############################################################################>
 # venv\Scripts\activate
 ###############################################################################>
@@ -258,7 +258,7 @@ class AccountSettingsView(LoginRequiredMixin, TemplateView,DataMixin):
         context['password_form'] = password_form
         return self.render_to_response(context)
 
-
+@login_required
 async def react_to_post(request, post_id, reaction_type):
     post = await library.objects.aget(id=post_id)
     user_reaction, created = await Reaction.objects.aget_or_create(user=request.user, post=post)
