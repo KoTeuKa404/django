@@ -2,6 +2,7 @@ from django.db import models
 from django.urls import reverse
 from django.contrib.auth.models import User
 
+
 class Category(models.Model):
     name = models.CharField(max_length=100, db_index=True)
     slug = models.SlugField(max_length=255, unique=True, db_index=True)
@@ -15,6 +16,7 @@ class Category(models.Model):
     class Meta:
         verbose_name = 'Категорії'
         verbose_name_plural = "Категорії"
+
 
 
 class TagPost(models.Model):
@@ -44,6 +46,7 @@ class library(models.Model):
     tags = models.ManyToManyField('TagPost', blank=True, related_name="tags")
     likes = models.IntegerField(default=0)
     dislikes = models.IntegerField(default=0)
+
 
     class Meta:
         verbose_name = 'Відома бібліотека'

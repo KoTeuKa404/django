@@ -3,7 +3,7 @@ from django.utils.safestring import mark_safe
 
 from .models import *
 
-class libraryAdmin(admin.ModelAdmin):
+class LibraryAdmin(admin.ModelAdmin):
     list_display = ('id', 'title', 'time_create', 'get_photo')
     list_display_links = ('id', 'title')
     search_fields = ('title', 'content')
@@ -24,7 +24,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 
-admin.site.register(library, libraryAdmin)  
+admin.site.register(library, LibraryAdmin)  
 admin.site.register(Comment)
 admin.site.register(Category, CategoryAdmin)
 

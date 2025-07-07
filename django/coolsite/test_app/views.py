@@ -40,7 +40,6 @@ from .permission import *
 # docker compose up -d --build
 
 
-
 class Python(DataMixin, ListView):
     model = library
     template_name = 'test_app/python.html'
@@ -55,7 +54,7 @@ class Python(DataMixin, ListView):
         return library.objects.filter().select_related('cat')
 
 
-class add_page(LoginRequiredMixin,DataMixin,CreateView):
+class AddPage(LoginRequiredMixin, DataMixin, CreateView):
     form_class = AddPostForm
     template_name = 'test_app/addpage.html'
     success_url = reverse_lazy('python')
@@ -102,7 +101,6 @@ class ShowPost(DataMixin, FormMixin, DetailView):
         comment.author = self.request.user
         comment.save()
         return redirect('post', post_slug=self.object.slug)
-
 
 
 class ShowCategory(DataMixin, ListView):
@@ -297,7 +295,7 @@ async def react_to_post(request, post_id, reaction_type):
 
 
 
-def pageNotFound(request, exception):
+def PageNotFound(request, exception):
     return render(request, 'test_app/404.html', status=404)
 
 
@@ -326,6 +324,7 @@ class Pagination(PageNumberPagination):
     page_size_query_param='page_size'
     max_page_size=100
     
+    
 class APIList(generics.ListCreateAPIView):
     queryset = library.objects.all()
     serializer_class = LibrarySerializer
@@ -333,12 +332,14 @@ class APIList(generics.ListCreateAPIView):
     authentication_classes = (JWTAuthentication,)
     pagination_class=Pagination
     
+    
 class APIUpdate(generics.RetrieveUpdateAPIView):
     queryset=library.objects.all()
     serializer_class=LibrarySerializer
     permission_classes=(IsAdminOrOwnerOrReadOnly,) 
     # permission_classes=(IsAuthenticated,) 
     authentication_classes=(TokenAuthentication,)
+    
     
 class APIDestr(generics.RetrieveUpdateDestroyAPIView):
     queryset=library.objects.all()
@@ -434,7 +435,7 @@ class APIDestr(generics.RetrieveUpdateDestroyAPIView):
 
 def test(request):
     posts=library.objects.all()
-    return render(request,'test_app/test.html',{'posts':posts,'title':'test'})
+    return render(request, 'test_app/test.html', {'posts':posts, 'title':'test'})
 
 
 
@@ -458,6 +459,4 @@ async def main(request):
 
 def shop(request):
     return render(request, 'test_app/shop.html')
-
-
 

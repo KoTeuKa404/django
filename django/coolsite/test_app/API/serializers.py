@@ -6,4 +6,4 @@ from test_app.models import *
 class LibrarySerializer(serializers.ModelSerializer):
     class Meta:
         model = library
-        fields = ('title','slug','content', 'cat')
+        fields = ('title', 'slug', 'content', 'cat')
