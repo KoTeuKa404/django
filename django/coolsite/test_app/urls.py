@@ -13,6 +13,7 @@ urlpatterns = [
     path('logout/', LogoutUser, name='logout_user'),
     path('python/',  Python.as_view(), name='python'),
     path('post/<slug:post_slug>/', ShowPost.as_view(), name='post'),
+    path('post/<slug:post_slug>/delete/', DeletePost.as_view(), name='delete_post'),
     path('category/<slug:cat_slug>/', ShowCategory.as_view(), name='category'),
     path('add_page/', AddPage.as_view(), name='add_page'),
     path('help/', Help.as_view(), name='help'),
