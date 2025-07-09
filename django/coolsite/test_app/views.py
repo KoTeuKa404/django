@@ -5,7 +5,7 @@ from django.contrib.auth import logout, login
 from django.contrib.auth.views import LoginView
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, CreateView, FormView
+from django.views.generic import ListView, DetailView, CreateView, FormView, View
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import FormMixin
 from django.contrib.auth.decorators import login_required
@@ -14,6 +14,7 @@ from django.contrib.auth import update_session_auth_hash
 from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.shortcuts import render
+from django.http import HttpResponseForbidden
 
 from rest_framework.response import *
 from rest_framework.views import *
@@ -69,6 +70,17 @@ class AddPage(LoginRequiredMixin, DataMixin, CreateView):
         context=super().get_context_data(**kwargs)
         c_def=self.get_user_context(title="Добавлення статті")
         return dict(list(context.items())+list(c_def.items()))
+
+
+class DeletePost(LoginRequiredMixin, View):
+    """Delete a post if the request user is the author."""
+
+    def post(self, request, post_slug):
+        post = get_object_or_404(library, slug=post_slug)
+        if post.author != request.user:
+            return HttpResponseForbidden()
+        post.delete()
+        return redirect('python')
     
 
 class ShowPost(DataMixin, FormMixin, DetailView):

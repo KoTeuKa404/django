@@ -53,6 +53,12 @@
             👎 Дизлайк ({{ post.dislikes }})
         </button>
     </form>
+    {% if user == post.author %}
+    <form action="{% url 'delete_post' post_slug=post.slug %}" method="POST" style="display: inline;">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-warning">Видалити пост</button>
+    </form>
+    {% endif %}
 </div>
 
 <h3>Залишити коментар</h3>
