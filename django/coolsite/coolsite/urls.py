@@ -43,7 +43,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('captcha/', include('captcha.urls')),
     path('api/v1/drf-auth/', include('rest_framework.urls')),
-
+    path('chat/', include('chat.urls')),
 
     path('api/v1/librarylist/', APIList.as_view()),
     path('api/v1/librarylist/<int:pk>/', APIUpdate.as_view()),
