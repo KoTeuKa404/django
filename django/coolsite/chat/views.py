@@ -4,9 +4,10 @@ from django.views.generic import ListView
 
 from .models import ChatMessage
 from .forms import ChatMessageForm
+from test_app.utils import *
 
 
-class ChatView(LoginRequiredMixin, ListView):
+class ChatView(LoginRequiredMixin, ListView,DataMixin):
     model = ChatMessage
     template_name = 'chat/chat.html'
     context_object_name = 'messages'
@@ -22,5 +23,7 @@ class ChatView(LoginRequiredMixin, ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        c_def = self.get_user_context()  
         context['form'] = ChatMessageForm()
+        context.update(c_def)            
         return context
