@@ -1,6 +1,10 @@
 from django.db import models
 from django.urls import reverse
 from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator, MaxValueValidator
+
+# docker compose exec web python manage.py makemigrations
+# docker compose exec web python manage.py migrate
 
 
 class Category(models.Model):
@@ -42,7 +46,7 @@ class library(models.Model):
 
     video_url = models.URLField(max_length=300, null=True, blank=True)
     video_embed_url = models.URLField(max_length=300, null=True, blank=True)
-
+    # lvl_user=models.IntegerField(max_length=1,blank=False,null=False,default=0)
     tags = models.ManyToManyField('TagPost', blank=True, related_name="tags")
     likes = models.IntegerField(default=0)
     dislikes = models.IntegerField(default=0)
@@ -112,3 +116,21 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.text
+
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="profile")
+    # 0 - гість/читач, 1 - адмін, 2 - модератор, 3 - автор, ... (приклад)
+    lvl_user = models.PositiveSmallIntegerField(
+        default=0,
+        validators=[MinValueValidator(0), MaxValueValidator(9)]
+    )
+
+    class Meta:
+        constraints = [
+            models.CheckConstraint(check=models.Q(lvl_user__gte=0, lvl_user__lte=9),
+                                name="profile_lvl_user_between_0_9")
+        ]
+
+    def __str__(self):
+        return f"{self.user.username} (lvl {self.lvl_user})"

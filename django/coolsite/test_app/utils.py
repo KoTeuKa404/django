@@ -5,9 +5,11 @@ from django.core.paginator import Paginator
 
 menu = [
     {'title': "Про сайт", 'url_name': 'python'},
-    {'title': "Головний сайт ", 'url_name': 'main'}, 
+    {'title': "Головний сайт ", 'url_name': 'main'},
     {'title': "Добавити статью", 'url_name': 'add_page'},
-    {'title': "Зворотній зв'язок", "url_name": 'help'}       
+    {'title': "Зворотній зв'язок", "url_name": 'help'},
+    {'title': "Чат", "url_name": 'chat'}
+
 ]
 
 

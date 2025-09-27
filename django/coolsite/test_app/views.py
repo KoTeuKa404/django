@@ -1,6 +1,8 @@
 import os
+import redis
 import aiofiles
 
+from django.dispatch import receiver
 from django.contrib.auth import logout, login
 from django.contrib.auth.views import LoginView
 from django.shortcuts import render, redirect, get_object_or_404
@@ -15,10 +17,11 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.shortcuts import render
 from django.http import HttpResponseForbidden
+from django.db.models.signals import post_save
 
 from rest_framework.response import *
 from rest_framework.views import *
-from rest_framework import generics, viewsets 
+from rest_framework import generics, viewsets
 from rest_framework.permissions import IsAuthenticatedOrReadOnly,IsAdminUser,IsAuthenticated
 from rest_framework.authentication import TokenAuthentication
 from rest_framework_simplejwt.authentication import JWTAuthentication
@@ -39,6 +42,7 @@ from .permission import *
 # docker compose up
 # docker compose down
 # docker compose up -d --build
+r = redis.Redis(host='redis', port=6379, db=0)
 
 
 class Python(DataMixin, ListView):
@@ -63,7 +67,7 @@ class AddPage(LoginRequiredMixin, DataMixin, CreateView):
 
     def form_valid(self, form):
         post = form.save(commit=False)
-        post.author = self.request.user  
+        post.author = self.request.user
         post.save()
         return redirect(self.success_url)
     def get_context_data(self, *, objects_list = None, **kwargs):
@@ -125,14 +129,14 @@ class ShowCategory(DataMixin, ListView):
 
 
     def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data(**kwargs)     
+        context = super().get_context_data(**kwargs)
         if context.get('posts'):
             title = 'Категорія - ' + str(context['posts'][0].cat)
             cat_selected = context['posts'][0].cat_id
         else:
             title = 'Категорія без записів'
-            cat_selected = None         
-        c_def = self.get_user_context(title=title, cat_selected=cat_selected)   
+            cat_selected = None
+        c_def = self.get_user_context(title=title, cat_selected=cat_selected)
         return dict(list(context.items()) + list(c_def.items()))
 
 
@@ -207,6 +211,7 @@ class Help(DataMixin, FormView):
         return redirect('python')
 
 
+
 class SearchView(DataMixin, ListView):
     model = library
     template_name = 'test_app/search_results.html'
@@ -214,20 +219,33 @@ class SearchView(DataMixin, ListView):
 
     def get_queryset(self):
         query = self.request.GET.get('q')
-        if query:
-            if query.startswith('#'):
-                tag_query = query[1:]
-                tags = TagPost.objects.filter(tag__icontains=tag_query)
-                categories = Category.objects.filter(name__icontains=tag_query)
-                return library.objects.filter(tags__in=tags) | library.objects.filter(cat__in=categories)
-            return library.objects.filter(title__icontains=query).select_related('cat')
-        return library.objects.none()
+        if not query:
+            return library.objects.none()
+
+        cache_key = f"search:{query.lower()}"
+        cached = r.get(cache_key)
+        if cached:
+            ids = [int(pk) for pk in cached.decode().split(',') if pk]
+            return library.objects.filter(pk__in=ids)
+
+        if query.startswith('#'):
+            tag_query = query[1:]
+            tags = TagPost.objects.filter(tag__icontains=tag_query)
+            categories = Category.objects.filter(name__icontains=tag_query)
+            qs = library.objects.filter(tags__in=tags) | library.objects.filter(cat__in=categories)
+        else:
+            qs = library.objects.filter(title__icontains=query).select_related('cat')
+        ids = [str(obj.pk) for obj in qs]
+        r.set(cache_key, ','.join(ids), ex=120)
+        return qs
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
         c_def = self.get_user_context(title='Результати пошуку:')
         context['query'] = self.request.GET.get('q')
-        return dict(list(context.items()) + list(c_def.items()))
+        context.update(c_def)
+        return context
+
 
 
 def LogoutUser(request):
@@ -320,62 +338,62 @@ class VideoInfoError(Exception):
 
 
 #######################################################################
-
-     #       ###       #
-    # #      #  #      
-   #####     ###       #
-  #     #    #         #
- #       #   #         #
-    
+'''
+#     #       ###       #
+#    # #      #  #
+#   #####     ###       #
+#  #     #    #         #
+# #       #   #         #
+'''
 #######################################################################
 
-        
-        
+
 class Pagination(PageNumberPagination):
     page_size=3
     page_size_query_param='page_size'
     max_page_size=100
-    
-    
+
+
 class APIList(generics.ListCreateAPIView):
     queryset = library.objects.all()
     serializer_class = LibrarySerializer
     permission_classes = (IsAuthenticatedOrReadOnly,)
     authentication_classes = (JWTAuthentication,)
     pagination_class=Pagination
-    
-    
+
+
 class APIUpdate(generics.RetrieveUpdateAPIView):
     queryset=library.objects.all()
     serializer_class=LibrarySerializer
-    permission_classes=(IsAdminOrOwnerOrReadOnly,) 
-    # permission_classes=(IsAuthenticated,) 
+    permission_classes=(IsAdminOrOwnerOrReadOnly,)
+    # permission_classes=(IsAuthenticated,)
     authentication_classes=(TokenAuthentication,)
-    
-    
+
+
 class APIDestr(generics.RetrieveUpdateDestroyAPIView):
     queryset=library.objects.all()
     serializer_class=LibrarySerializer
     permission_classes=(IsAdminOrOwnerOrReadOnly,)
 
-
-
-
+@receiver(post_save, sender=User)
+def create_profile(sender, instance, created, **kwargs):
+    if created:
+        Profile.objects.create(user=instance)
 
 
 
 
     # # queryset=library.objects.all()
-    # serializer_class=librarySerializer    
+    # serializer_class=librarySerializer
 
     # def get_queryset(self):
-    #     pk=self.kwargs.get('pk')    
+    #     pk=self.kwargs.get('pk')
     #     if not pk:
     #         return library.objects.all()
     #     return library.objects.filte(pk=pk)
 
     # @action(methods=['get'], detail=True)
-    # def category(self,request,pk=None):  
+    # def category(self,request,pk=None):
     #     cats=Category.objects.get(pk=pk)
     #     return Response({'cats':cats.name})
 
@@ -447,7 +465,7 @@ class APIDestr(generics.RetrieveUpdateDestroyAPIView):
 
 def test(request):
     posts=library.objects.all()
-    return render(request, 'test_app/test.html', {'posts':posts, 'title':'test'})
+    return render(request, 'test_app/pybase.html', {'posts':posts, 'title':'test'})
 
 
 

@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'changeme')
 DEBUG = int(os.environ.get('DJANGO_DEBUG', 1))
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
-INTERNAL_IPS = ["127.0.0.1"]
+INTERNAL_IPS = ["127.0.0.1","localhost"]
 
 
 # Application definition

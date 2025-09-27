@@ -23,7 +23,7 @@ class ChatView(LoginRequiredMixin, ListView,DataMixin):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        c_def = self.get_user_context()  
+        c_def = self.get_user_context(title='Чат') #
         context['form'] = ChatMessageForm()
-        context.update(c_def)            
+        context.update(c_def)            #
         return context

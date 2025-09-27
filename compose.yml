@@ -1,3 +1,5 @@
+name: django-docker
+
 services:
   db:
     image: postgres:15
@@ -22,8 +24,9 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     volumes:
       - mysqldata:/var/lib/mysql
-    ports:
-      - "3306:3306"
+    expose:
+      - "3306"
+
   redis:
     image: redis:7.2
     restart: always
@@ -43,9 +46,9 @@ services:
     command: gunicorn coolsite.wsgi:application --bind 0.0.0.0:8000
     working_dir: /code
     volumes:
-      - ./django/coolsite:/code            
-      - static_volume:/code/staticfiles     
-      - media_volume:/code/media            
+      - ./django/coolsite:/code
+      - static_volume:/code/staticfiles
+      - media_volume:/code/media
     env_file:
       - .env
     depends_on:
@@ -59,14 +62,25 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro  
-      - static_volume:/staticfiles                   
-      - media_volume:/media                          
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - static_volume:/staticfiles
+      - media_volume:/media
     depends_on:
       - web
 
 volumes:
   pgdata:
-  static_volume:
-  media_volume:
+    external: true
+    name: doker_pgdata
+
   mysqldata:
+    external: true
+    name: doker_mysqldata
+
+  static_volume:
+    external: true
+    name: doker_static_volume
+
+  media_volume:
+    external: true
+    name: doker_media_volume

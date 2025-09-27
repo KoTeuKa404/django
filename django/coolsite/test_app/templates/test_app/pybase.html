@@ -9,18 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<table class="table-page" border=0 cellpadding="0" cellspacing="0"> 
+<table class="table-page" border=0 cellpadding="0" cellspacing="0">
 <tr><td valign=top>
     <!--меню -->
 {% block mainmenu %}
-    <div class="header">  
+    <div class="header">
         <ul id="mainmenu" class="mainmenu">
-            <img src="{% static 'test_app/images/logs.png' %}" width="60" height="60">
             {% for m in menu %}
                 <li><a href="{% url m.url_name %}">{{ m.title }}</a></li>
             {% endfor %}
+            <img src="{% static 'test_app/images/logs.png' %}" width="60" height="60">
+
             {% if request.user.is_authenticated %}
-                 <li class="last"> <a href="{% url 'account_settings' %}">{{ user.username }}</a> | <a href="{% url 'logout_user' %}">Вийти</a></li> 
+                <li class="last"> <a href="{% url 'account_settings' %}">{{ user.username }}</a> | <a href="{% url 'logout_user' %}">Вийти</a></li>
             {% else %}
                 <li class="last"><a href="{% url 'register' %}">Реєстрація</a> | <a href="{% url 'login_user' %}">Війти</a></li>
             {% endif %}
@@ -44,7 +45,7 @@
             </ul>
         </td>
         <!-- Кінець Sidebar'а -->
-        <td valign="top" class="content">   
+        <td valign="top" class="content">
             <!-- Блок контента -->
             <div class="content-text">
             {% block content %}

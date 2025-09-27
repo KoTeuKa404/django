@@ -21,7 +21,7 @@ urlpatterns = [
     path('tags/<slug:tag_slug>/', ShowTagPostList.as_view(), name='tag'),
     path('account/settings/', AccountSettingsView.as_view(), name='account_settings'),
     path('react/<int:post_id>/<str:reaction_type>/', react_to_post, name='react_to_post'),
-    
+    path("test/",test,name='test')
 
 
 ]
