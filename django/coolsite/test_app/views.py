@@ -267,7 +267,7 @@ class AccountSettingsView(LoginRequiredMixin, TemplateView,DataMixin):
 
     def post(self, request, *args, **kwargs):
         user_form = UserUpdateForm(request.POST, instance=request.user)
-        password_form = CustomPasswordChangeForm(self.request.user, request.POST) 
+        password_form = CustomPasswordChangeForm(self.request.user, request.POST)
 
         if 'update_profile' in request.POST:
             if user_form.is_valid():
@@ -375,10 +375,7 @@ class APIDestr(generics.RetrieveUpdateDestroyAPIView):
     serializer_class=LibrarySerializer
     permission_classes=(IsAdminOrOwnerOrReadOnly,)
 
-@receiver(post_save, sender=User)
-def create_profile(sender, instance, created, **kwargs):
-    if created:
-        Profile.objects.create(user=instance)
+
 
 
 

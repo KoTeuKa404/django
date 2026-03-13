@@ -69,7 +69,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             BASE_DIR / 'templates',
-        ],        
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -102,7 +102,7 @@ WSGI_APPLICATION = 'coolsite.wsgi.application'
 #         'NAME':     os.environ.get('POSTGRES_DB'),
 #         'USER':     os.environ.get('POSTGRES_USER'),
 #         'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
-#         'HOST':     'db',    
+#         'HOST':     'db',
 #         'PORT':     '5432',
 #     }
 # }

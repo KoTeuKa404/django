@@ -25,15 +25,15 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 class MyCustomRouter(routers.SimpleRouter):
     router=[
         routers.Route(url=r'^{prefix}$',
-                      mapping={'get':'list'},
-                      name='{basename}-list',
-                      detail=False,
-                      initkwargs={'suffix':'List'}),
+                    mapping={'get':'list'},
+                    name='{basename}-list',
+                    detail=False,
+                    initkwargs={'suffix':'List'}),
         routers.Route(url=r'^{prefix}$',
-                      mapping={'get':'retrieve'},
-                      name='{basename}-list',
-                      detail=True,
-                      initkwargs={'suffix':'Detail'}),
+                    mapping={'get':'retrieve'},
+                    name='{basename}-list',
+                    detail=True,
+                    initkwargs={'suffix':'Detail'}),
         ]
     
 router=MyCustomRouter()
@@ -50,7 +50,7 @@ urlpatterns = [
     path('api/v1/librarydelete/<int:pk>/', APIDestr.as_view()),
     # path('api/v1/', include(router.urls)), # http://127.0.0.1:8000/api/v1/librarylist/
     
-    re_path(r'^api/v1/auth/', include('djoser.urls')),  
+    re_path(r'^api/v1/auth/', include('djoser.urls')),
     re_path(r'^auth/', include('djoser.urls.authtoken')),
     path('api/v1/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/v1/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
@@ -66,5 +66,5 @@ if settings.DEBUG:
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = PageNotFound 
+handler404 = PageNotFound
 
