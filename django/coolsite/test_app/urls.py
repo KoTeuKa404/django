@@ -1,12 +1,14 @@
 # urls.py
 from django.urls import path
+from django.views.generic import RedirectView
 from .views import *
 from django.conf.urls import handler404
 from django.views.decorators.cache import cache_page
 
 
 urlpatterns = [
-    path('', main, name='main'),
+    path('', RedirectView.as_view(url='/python/', permanent=False)),
+    path('main/', main, name='main'),
     path('shop/', shop, name='shop'),
     path('login/', LoginUser.as_view(), name='login_user'),
     path('register/', RegisterUser.as_view(), name='register'),
